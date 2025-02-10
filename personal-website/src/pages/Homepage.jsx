@@ -14,7 +14,7 @@ function Homepage() {
             </div>
 
             <div className = "home-1">
-                <div className = "content-1">
+                <div className = "home-content-1">
                     <h1 className="home-title">Website Overview</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, ex commodi incidunt expedita est obcaecati omnis, perspiciatis harum rem facilis hic similique velit eos pariatur impedit dolore natus, nihil cupiditate.</p>
                     <h2 className = "subtitle1">Subtitle text</h2>
@@ -24,7 +24,7 @@ function Homepage() {
             <hr/>
             <div className = "home-2">
                 <h1 className="home-title">Card Description</h1>
-                <div className = "content-2" >
+                <div className = "home-content-2" >
                     <p><a href="#"><img class="card" src={card} alt="Card to [page]"></img></a></p>
                     <p><a href="#"><img class="card" src={card} alt="Card to [page]"></img></a></p>
                     <p><a href="#"><img class="card" src={card} alt="Card to [page]"></img></a></p>
