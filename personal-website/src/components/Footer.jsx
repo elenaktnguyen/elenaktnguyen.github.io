@@ -4,13 +4,21 @@ import linkedin from "../assets/linkedin_icon.png";
 function Footer() {
     return (
         <>
-        <a href="#">
-            <img class="social" src={instagram} alt="Instagram icon"></img>
-        </a>
-        <a href="#">
-            <img class="social" src={linkedin} alt="LinkedIn icon"></img>
-        </a>
-        <p>&copy; {new Date().getFullYear()} Elena Nguyen</p>
+        <footer>
+            <div className="socials">
+                <a href="#">
+                    <p>
+                        <img class="s-icon" src={instagram} alt="Instagram icon"></img>
+                    </p>
+                </a>
+                <a href="#">
+                    <p>
+                        <img class="s-icon" src={linkedin} alt="LinkedIn icon"></img>
+                    </p>
+                </a>
+            </div>
+            <p className="copyright">&copy; {new Date().getFullYear()} Elena Nguyen</p>
+        </footer>
         </>
     );
 }
