@@ -5,6 +5,7 @@ html, body {
   padding: 0;
   background-color: #fffffa;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +13,10 @@ body {
 }
 ::-webkit-scrollbar {
   display: none; /* Hide scrollbar */
+}
+
+a{
+  text-decoration: none;
 }
 
 .nav-container {
@@ -172,3 +177,45 @@ hr {
 .card-desc {
   width: 50%;
 }
+
+/*---*/
+
+
+.illustration-content {
+  width: 100vw; 
+  aspect-ratio: 16 / 9;
+  background-color: #183252;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* verticle */
+  align-items: center;
+}
+
+.illustration-image {
+  width: 85%; 
+  aspect-ratio: 16 / 9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* verticle */
+}
+
+.illustration-image button {
+  width: 15%;
+}
+
+.illustration-slide-1 {
+  width: 85vw;
+  margin-bottom: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.illustration-content-1 {
+
+}
+
