@@ -1,0 +1,69 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.nav-container {
+  width: 100vw; 
+  background-color: white;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding-top: 10px
+}
+
+.nav-content {
+  width: 85%; 
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  display: flex;
+  text-align: center;
+  position: absolute;
+  transform: translateX(1%);
+}
+
+.logo a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 20px; 
+  flex-direction: row;
+  font-size: small;
+}
+
+.nav-left a, .nav-right a{
+  display: flex;
+  gap: 20px; 
+  flex-direction: row;
+  font-size: small;
+}
+
+.nav-right {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+  color: grey;
+}
+
