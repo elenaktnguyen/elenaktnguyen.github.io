@@ -33,11 +33,14 @@ function Projects() {
                                 img=  {CardTemplate}
                                 title="Project 1" 
                                 description="Description here" 
+                                link = "#"
+                                langs = {["HTML", "CSS"]}
                             />
                             <ProjectCard 
                                 img=  {CardTemplate}
-                                title="Project 1" 
+                                title="Project 2" 
                                 description="Description here" 
+                                link = "#"
                             />
                         </div>
                     </div>

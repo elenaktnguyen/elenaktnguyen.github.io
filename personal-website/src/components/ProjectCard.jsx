@@ -1,11 +1,23 @@
-function ProjectCard({ img, title, description }) {  
+function ProjectCard({ img, title, description, link, langs}) {  
     return (
         <div className="project-card-container">
             <div className="project-card-content">
-                <img src={img} alt={title + "image"} className="project-card-img" />
+                <a href = {link}>
+                    <img src={img} alt={title + "image"} className="project-card-img" />
+                </a>
             </div>
-            <h2 className="project-card-title">{title}</h2>
+            <h2 className="project-card-title"><a href = {link}>{title}</a></h2>
             <p className="project-card-description">{description}</p>
+
+            <div className="project-card-langs">
+                {langs && langs.length > 0 ? (
+                    langs.map((lang, index) => (
+                        <p key={index} className="project-card-lang">{lang}</p>
+                    ))
+                ) : (
+                    <p className="project-card-lang">N/A</p>  // Debugging line
+                )}
+            </div>
         </div>
     );
 }
