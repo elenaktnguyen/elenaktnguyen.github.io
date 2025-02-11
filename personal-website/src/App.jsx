@@ -6,7 +6,7 @@ import About from './pages/About.jsx'
 function App() {
     return(
      <>
-      <About/>
+      <Homepage/>
      </>
     )
 }
