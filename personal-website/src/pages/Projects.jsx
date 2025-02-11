@@ -1,5 +1,7 @@
 import Nav from '../components/nav.jsx'
 import Footer from '../components/Footer.jsx'
+import ProjectCard from '../components/ProjectCard.jsx';
+import CardTemplate from "../assets/project_card_image_placeholder.png";
 
 function Projects() {
     return (
@@ -13,7 +15,7 @@ function Projects() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi impedit esse, odit fugiat voluptatum voluptate voluptatibus rerum? Cum voluptate, assumenda odio nobis rem ipsam sed reprehenderit mollitia, quae iusto deleniti?</p>
                     </div>
                     <div className="proj-content-1-right">
-                        {/* Image placeholder */}
+                        {/* Todo: Add image */}
                     </div>
                 </div>
 
@@ -27,7 +29,11 @@ function Projects() {
                     <div className = "proj-content-2-projects">
                         <h2>Project Links</h2>
                         <div className="proj-links">
-                            {/* Proj placeholder */}
+                            <ProjectCard 
+                                img=  {CardTemplate}
+                                title="Project 1" 
+                                description="This is my first project!" 
+                            />
                         </div>
                     </div>
                     
