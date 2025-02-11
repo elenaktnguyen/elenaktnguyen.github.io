@@ -24,11 +24,16 @@ function Projects() {
                         <h2>Languages</h2>
                         <ul>Python, C, C++, Java</ul>
                         <ul>HTML, CSS, JS</ul>
-                        
                     </div>
+                    <hr className="project-divider"></hr>
                     <div className = "proj-content-2-projects">
                         <h2>Project Links</h2>
                         <div className="proj-links">
+                            <ProjectCard 
+                                img=  {CardTemplate}
+                                title="Project 1" 
+                                description="Description here" 
+                            />
                             <ProjectCard 
                                 img=  {CardTemplate}
                                 title="Project 1" 
