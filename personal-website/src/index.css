@@ -215,7 +215,32 @@ hr {
   justify-self: center;
 }
 
-.illustration-content-1 {
+/*---*/
+.project-card-container {
+  width: 35vw;
+  max-width: 400px;
+  background-color: rgb(250, 246, 239);
+  margin: 10px;
+  padding: 10px;
+  outline: 2px solid #c5c9cf; 
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: transform 0.3s ease-in-out;
 }
 
+.project-card-container:hover {
+  transform: scale(1.05); 
+}
+
+
+.project-card-img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.project-card-description{
+  margin-top: -15px;
+}

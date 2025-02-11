@@ -32,7 +32,7 @@ function Projects() {
                             <ProjectCard 
                                 img=  {CardTemplate}
                                 title="Project 1" 
-                                description="This is my first project!" 
+                                description="Description here" 
                             />
                         </div>
                     </div>
