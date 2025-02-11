@@ -21,10 +21,10 @@ function Homepage() {
                 </div>
             </div>
 
-            <hr/>
+            <hr className = "home-divider"></hr>
             <div className = "home-2">
                 <h1 className="home-title">Card Description</h1>
-                <div className = "home-content-2" >
+                <div className = "content-2" >
                     <p><a href="#"><img class="card" src={card} alt="Card to [page]"></img></a></p>
                     <p><a href="#"><img class="card" src={card} alt="Card to [page]"></img></a></p>
                     <p><a href="#"><img class="card" src={card} alt="Card to [page]"></img></a></p>
