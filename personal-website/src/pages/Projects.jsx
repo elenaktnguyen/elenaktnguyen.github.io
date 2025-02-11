@@ -33,14 +33,14 @@ function Projects() {
                                 img=  {CardTemplate}
                                 title="Project 1" 
                                 description="Description here" 
-                                link = "#"
+                                link = "https://github.com/elenaktnguyen/Sample1"
                                 langs = {["HTML", "CSS"]}
                             />
                             <ProjectCard 
                                 img=  {CardTemplate}
                                 title="Project 2" 
                                 description="Description here" 
-                                link = "#"
+                                link = "https://github.com/elenaktnguyen/Sample2"
                             />
                         </div>
                     </div>
