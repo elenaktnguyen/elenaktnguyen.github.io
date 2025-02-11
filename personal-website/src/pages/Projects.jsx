@@ -11,7 +11,7 @@ function Projects() {
                 <div className="proj-content-1">
                     <div className="proj-content-1-left">
                         <h1> Project Portfolio</h1>
-                        <h4>Elena Nguyen | SFU CS</h4>
+                        <h4>Elena Nguyen | <a href = "https://www.sfu.ca/fas/computing.html" target = "blank">SFU CS</a></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi impedit esse, odit fugiat voluptatum voluptate voluptatibus rerum? Cum voluptate, assumenda odio nobis rem ipsam sed reprehenderit mollitia, quae iusto deleniti?</p>
                     </div>
                     <div className="proj-content-1-right">

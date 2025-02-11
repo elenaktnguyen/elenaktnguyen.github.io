@@ -10,7 +10,7 @@ function About() {
                     <div className = "about-content-left">
                         <h1>About me</h1>
                         <p className = "bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ut tempora sed, quia dolorum repellendus veritatis ducimus fugiat fuga perferendis nobis pariatur dolores quisquam amet repellat officiis odio deleniti hic.</p>
-                        <h2>Email</h2>
+                        <h2><a href = "mailto:ena43@sfu.ca">ena43@sfu.ca</a></h2>
                     </div>
                     <div className = "about-content-right">
                         {/* Todo: Add image */}
