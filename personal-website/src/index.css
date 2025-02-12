@@ -170,6 +170,15 @@ footer {
 
 .card {
   width: 90%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card {
+  border-radius: 3px;
+}
+
+.card:hover {
+  transform: scale(1.05); 
 }
 
 .card-desc {
