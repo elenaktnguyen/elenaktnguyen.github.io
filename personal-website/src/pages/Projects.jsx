@@ -20,10 +20,10 @@ function Projects() {
                 </div>
 
                 <div className="proj-content-2">
-                    <div className = "proj-content-2-languages">
+                    <div className = "proj-content-2-langs">
                         <h2>Languages</h2>
-                        <ul>Python, C, C++, Java</ul>
-                        <ul>HTML, CSS, JS</ul>
+                        <p>Python, C, C++, Java</p>
+                        <p>HTML, CSS, JS</p>
                     </div>
                     <hr className="project-divider"></hr>
                     <div className = "proj-content-2-projects">
