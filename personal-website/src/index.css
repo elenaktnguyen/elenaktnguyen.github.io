@@ -1,3 +1,8 @@
+/* Free font: https://www.dafont.com/belgiano-serif.font?l[]=10&l[]=1*/
+@font-face {
+  font-family: Belgiano;
+  src: url(assets/Belgiano.ttf);
+}
 
 html, body {
   width: 100%;
@@ -19,11 +24,23 @@ a{
   text-decoration: none;
 }
 
-/* Free font: https://www.dafont.com/belgiano-serif.font?l[]=10&l[]=1*/
-@font-face {
+h1, h2, h4, p{
   font-family: Belgiano;
-  src: url(assets/Belgiano.ttf);
 }
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p{
+  font-size: larger;
+}
+
+/*---*/
 
 .nav-container {
   width: 100vw; 
@@ -95,6 +112,12 @@ footer {
   align-items: center;
   padding-top: 10px;
   justify-self: center;
+  font-size: medium;
+}
+
+footer p {
+  font-size: medium;
+  color: #183252;
 }
 
 .socials {
