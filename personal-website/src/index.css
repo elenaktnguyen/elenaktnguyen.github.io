@@ -8,7 +8,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fffefa;
+  background-color: #fefbf7;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -53,7 +53,7 @@ p{
 
 .nav-container {
   width: 100%; 
-  background-color: #fffffa;
+  background-color: #fcfaf6;
 
   display: flex;
   justify-content: center; 
@@ -157,7 +157,6 @@ footer p {
 
 .home-content {
   width: 100vw; 
-  background-color: white;
   box-sizing: border-box;
 
   display: flex;
@@ -485,6 +484,7 @@ button:hover {
 
 .about-content {
   width: 85%;
+  max-width: 1100px;
   margin: 5vw;
   padding-bottom: 100px;
 
@@ -492,7 +492,6 @@ button:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .bio {
@@ -500,9 +499,18 @@ button:hover {
 }
 
 .about-content-left {
-  width: 50%;
+  width: 55%;
+}
+.about-content-left img {
+  width: 60%;
+  margin-left: 35%;
+  margin-top: -19%;
 }
 
 .about-content-right {
   width: 45%
+}
+
+.about-content-right img {
+  width: 90%;
 }
