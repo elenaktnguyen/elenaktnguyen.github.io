@@ -23,17 +23,16 @@ function Homepage() {
 
             <div className = "home-1">
                 <div className = "home-content-1">
-                    <h1 className="home-title">Tickets Please! Backstage Tour</h1>
+                    <h1 className="home-title">Tickets Please! Behind the Scenes</h1>
                     <p>
-                        Take a step into my personal website! This space showcases my collection of creative
+                        Welcome to my personal website! This space showcases my collection of creative
                         works and technical projects, tied together and designed for engagement.
-                    </p>
-                    <p>
+
                         This website is a reflection of my drive and how I seek to inspire,
                         so take a look around!
                     </p>
                     <h2 className="subtitle-1">
-                        Now featuring: <span className="highlight-1">Unknown tour dates!</span>
+                        Now featuring: <span className="highlight-1">Elena Nguyen</span>
                     </h2>
 
                 </div>

@@ -14,20 +14,30 @@ import pokemon from "../assets/galleryImages/pokemon.png";
 import dog from "../assets/galleryImages/dog.png";
 import graphic from "../assets/galleryImages/graphic_design.png";
 
+// style={{
+//     backgroundImage: `url(${illImage})`,
+//     backgroundSize: "cover",
+//     backgroundPosition: "top center",
+//     backgroundRepeat: "no-repeat",
+//     width: "100%"
+// }}
+
 function Illustration() {
     return (
         <>
             <Nav/>
             <div className = "illustration-content">
-                <div className = "illustration-image" style={{
-                    backgroundImage: `url(${illImage})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "top center",
-                    backgroundRepeat: "no-repeat",
-                    width: "100%"
-                }}>
+                <div className = "illustration-image" style = {{color: "white"}}>
+                    <h1>My Creative Showcase</h1>
+                    <p style = {{marginTop: "-3%"}}>
+                        Featuring experimental sketches, mixed media,
+                        <br/>
+                        character drawings, graphic design,
+                        <br/>
+                        and acrylics
+                    </p>
                     <button type="button">
-                        <a href="#gallery" className="view-button">TAKE A LOOK!</a>
+                        <a href="#gallery" className="view-button">Take a Look!</a>
                     </button>
                 </div>
             </div>

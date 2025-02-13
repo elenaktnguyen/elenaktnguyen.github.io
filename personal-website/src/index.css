@@ -4,6 +4,8 @@
   src: url(assets/Belgiano.ttf);
 }
 
+/*fefbf7*/
+
 html, body {
   width: 100%;
   margin: 0;
@@ -34,7 +36,7 @@ h1, h2, h4, p{
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.3rem;
 }
 
 h2 {
@@ -256,8 +258,8 @@ footer p {
 
 .illustration-content {
   width: 100vw; 
-  aspect-ratio: 16 / 9;
-  background-color: #1d3c63;
+  aspect-ratio: 2 / 1;
+  background-color: #183252;
   box-sizing: border-box;
   padding-top: 6vh;
 
@@ -268,8 +270,9 @@ footer p {
 }
 
 .illustration-image {
-  width: 100%; 
-  aspect-ratio: 16 / 9;
+  width: 85%; 
+  max-width: 1100px;
+  aspect-ratio: 2.77 / 1;
 
   display: flex;
   flex-direction: column;
@@ -278,8 +281,6 @@ footer p {
 
 .illustration-image button {
   width: 15%;
-  margin-left: 22%;
-  margin-top: 28%;
 }
 
 .illustration-slide-1 {
@@ -321,7 +322,7 @@ footer p {
 
 button {
   background-color: transparent;
-  border: 1px transparent #b5bbc2;
+  border: 1px solid #b5bbc2;
   padding-top: 1%;
   padding-bottom: 1%;
   border-radius: 8px;
@@ -331,8 +332,8 @@ button {
 
 button a {
   color: white;
-  font-family:'Trebuchet MS';
-  font-size: 1.8vw;
+  font-family: Belgiano;
+  font-size: 1.5vw;
   text-decoration: none;
   font-weight: bold;
 }
@@ -407,7 +408,7 @@ button:hover {
 
 .proj-slide-1{
   width: 100vw;
-  padding-top: 8vh;
+  padding-top: 10vh;
 
   justify-content: center;
   align-items: center;
@@ -415,8 +416,11 @@ button:hover {
 
 .proj-content-1, .proj-content-2{
   width: 85%; 
+  padding-right: 100px;
   max-width: 1100px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  background-color: #fcfaf6;
+  border: 10px solid #fcfaf6;
 
   display: flex;
   flex-direction: row;
@@ -500,11 +504,13 @@ button:hover {
 
 .about-content-left {
   width: 55%;
+  align-items: center;
+  justify-content: center;
 }
 .about-content-left img {
-  width: 60%;
-  margin-left: 35%;
-  margin-top: -19%;
+  width: 40%;
+  margin-left: 45%;
+  margin-top: -8%;
 }
 
 .about-content-right {
@@ -512,5 +518,5 @@ button:hover {
 }
 
 .about-content-right img {
-  width: 90%;
+  width: 100%;
 }
