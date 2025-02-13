@@ -8,7 +8,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fffffa;
+  background-color: #fffefa;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -246,6 +246,7 @@ footer p {
   aspect-ratio: 16 / 9;
   background-color: #1d3c63;
   box-sizing: border-box;
+  padding-top: 6vh;
 
   display: flex;
   flex-direction: column;
@@ -254,7 +255,7 @@ footer p {
 }
 
 .illustration-image {
-  width: 85%; 
+  width: 100%; 
   aspect-ratio: 16 / 9;
 
   display: flex;
@@ -264,22 +265,52 @@ footer p {
 
 .illustration-image button {
   width: 15%;
+  margin-left: 22%;
+  margin-top: 28%;
 }
 
 .illustration-slide-1 {
   width: 85vw;
-  margin-bottom: 50vh;
+  max-width: 1100px;
+  padding-top: 6vh;
 
   display: flex;
   flex-direction: column;
   justify-self: center;
 }
 
-button {
-  background-color: #254C7E;
-  border: none;
+.illustration-slide-1 h1 {
+  margin-bottom: -10px;
+}
+
+.illustration-slide-1 img {
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.illustration-content-1 {
+  box-sizing: border-box;
   padding-top: 10px;
-  padding-bottom: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pic-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px transparent #b5bbc2;
+  padding-top: 1%;
+  padding-bottom: 1%;
   border-radius: 8px;
 
   transition: background-color 0.3s;
@@ -287,14 +318,14 @@ button {
 
 button a {
   color: white;
-  font-family: Belgiano;
-  font-size: 15px;
+  font-family:'Trebuchet MS';
+  font-size: 1.8vw;
   text-decoration: none;
   font-weight: bold;
 }
 
 button:hover {
-  background-color: #335785; 
+  background-color: rgba(43, 78, 124, 0.3); 
 }
 
 /*---*/
