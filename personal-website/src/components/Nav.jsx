@@ -13,7 +13,7 @@ function Nav() {
                         <h4><NavLink to = '/illustration' className={({ isActive }) => isActive ? "active-link" : ""}>Illustrations</NavLink></h4>
                     </div>
                     <div className="text-hover">
-                        <h4><NavLink to = '/project' className={({ isActive }) => isActive ? "active-link" : ""}>Project</NavLink></h4>
+                        <h4><NavLink to = '/project' className={({ isActive }) => isActive ? "active-link" : ""}>Projects</NavLink></h4>
                     </div>
                     
                 </nav>

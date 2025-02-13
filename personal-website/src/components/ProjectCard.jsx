@@ -3,11 +3,11 @@ function ProjectCard({ img, title, description, link, langs}) {
         <div className="project-card-container">
             <div className="project-card-content">
                 <a href = {link} target = "blank">
-                    <img src={img} alt={title + "image"} className="project-card-img" />
+                    <img src={img} alt={title + "image"} className="project-card-img"/>
                 </a>
             </div>
             <h2 className="project-card-title"><a href = {link} target = "blank">{title}</a></h2>
-            <p className="project-card-description">{description}</p>
+            <p className="project-card-description" style = {{fontSize: "large", marginTop: "-10px"}}>{description}</p>
 
             <div className="project-card-langs">
                 {langs && langs.length > 0 ? (
