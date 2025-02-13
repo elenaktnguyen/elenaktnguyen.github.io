@@ -4,11 +4,13 @@
   src: url(assets/Belgiano.ttf);
 }
 
+/*fefbf7*/
+
 html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fffffa;
+  background-color: #fefbf7;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -22,6 +24,11 @@ body {
 
 a{
   text-decoration: none;
+  color:black;
+}
+
+a:hover{
+  color:grey;
 }
 
 h1, h2, h4, p{
@@ -29,7 +36,11 @@ h1, h2, h4, p{
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.3rem;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 h4 {
@@ -37,17 +48,18 @@ h4 {
 }
 
 p{
-  font-size: larger;
+  font-size: 1.4rem;
 }
 
 /*---*/
 
 .nav-container {
-  width: 100vw; 
-  background-color: #fffffa;
+  width: 100%; 
+  background-color: #fcfaf6;
 
   display: flex;
   justify-content: center; 
+  justify-self: center;
   align-items: center;
   position: fixed;
   top: 0; 
@@ -55,6 +67,7 @@ p{
 
 .nav-content {
   width: 85%; 
+  max-width: 1100px;
   height: 6vh;
   
   display: flex;
@@ -146,7 +159,6 @@ footer p {
 
 .home-content {
   width: 100vw; 
-  background-color: white;
   box-sizing: border-box;
 
   display: flex;
@@ -158,11 +170,16 @@ footer p {
 .home-image {
   background-color: #183252;
   width: 85%; 
+  max-width: 1100px;
   aspect-ratio: 16 / 9;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.home-image img{
+  width: 100%;
 }
 
 .home-1 {
@@ -176,8 +193,13 @@ footer p {
   text-align: center;
 }
 
-.home-content-1 {
+.home-content-1{
   width: 50%;
+  max-width: 1100px;
+}
+
+.home-content-1 p{
+  color: rgb(54, 54, 65);
 }
 
 .home-divider {
@@ -199,13 +221,18 @@ footer p {
 
 .home-content-2 {
   width: 85%; 
-
+  max-width: 1100px;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 2%;
   text-align: center;
   
+}
+
+.highlight-1{
+  color:#254C7E;
 }
 
 .card {
@@ -231,9 +258,10 @@ footer p {
 
 .illustration-content {
   width: 100vw; 
-  aspect-ratio: 16 / 9;
-  background-color: #1d3c63;
+  aspect-ratio: 2 / 1;
+  background-color: #183252;
   box-sizing: border-box;
+  padding-top: 6vh;
 
   display: flex;
   flex-direction: column;
@@ -243,7 +271,8 @@ footer p {
 
 .illustration-image {
   width: 85%; 
-  aspect-ratio: 16 / 9;
+  max-width: 1100px;
+  aspect-ratio: 2.77 / 1;
 
   display: flex;
   flex-direction: column;
@@ -256,18 +285,46 @@ footer p {
 
 .illustration-slide-1 {
   width: 85vw;
-  margin-bottom: 50vh;
+  max-width: 1100px;
+  padding-top: 6vh;
 
   display: flex;
   flex-direction: column;
   justify-self: center;
 }
 
-button {
-  background-color: #254C7E;
-  border: none;
+.illustration-slide-1 h1 {
+  margin-bottom: -10px;
+}
+
+.illustration-slide-1 img {
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.illustration-content-1 {
+  box-sizing: border-box;
   padding-top: 10px;
-  padding-bottom: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pic-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #b5bbc2;
+  padding-top: 1%;
+  padding-bottom: 1%;
   border-radius: 8px;
 
   transition: background-color 0.3s;
@@ -276,13 +333,13 @@ button {
 button a {
   color: white;
   font-family: Belgiano;
-  font-size: 15px;
+  font-size: 1.5vw;
   text-decoration: none;
   font-weight: bold;
 }
 
 button:hover {
-  background-color: #335785; 
+  background-color: rgba(43, 78, 124, 0.3); 
 }
 
 /*---*/
@@ -294,6 +351,7 @@ button:hover {
 .project-card-container {
   width: 40%;
   max-width: 400px;
+  min-width: 260px;
   background-color: rgb(250, 246, 239);
   margin: 10px;
   padding: 10px;
@@ -307,6 +365,7 @@ button:hover {
   transition: transform 0.3s ease-in-out;
 }
 
+
 .project-card-container:hover {
   transform: scale(1.05); 
 }
@@ -317,9 +376,16 @@ button:hover {
 
 .project-card-img {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  border-radius: 3px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  background-size:contain;
+  background-position: top center;
+  background-repeat: no-repeat,
 }
+
+.project-card-img:hover{
+  transform: scale(1.02); 
+} 
 
 .project-card-description{
   margin-top: -15px;
@@ -335,20 +401,26 @@ button:hover {
   font-size: small;
   padding: 5px;
   outline: 2px solid #c5c9cf; 
+  border-radius: 3px;
 }
 
 /*---*/
 
 .proj-slide-1{
   width: 100vw;
+  padding-top: 10vh;
+
   justify-content: center;
   align-items: center;
 }
 
 .proj-content-1, .proj-content-2{
   width: 85%; 
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-right: 100px;
+  max-width: 1100px;
+  margin-bottom: 50px;
+  background-color: #fcfaf6;
+  border: 10px solid #fcfaf6;
 
   display: flex;
   flex-direction: row;
@@ -356,8 +428,7 @@ button:hover {
 }
 
 .proj-content-1-left{
-  width: 70%;
-
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -367,14 +438,26 @@ button:hover {
 }
 
 .proj-content-1-left h4{
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 .proj-content-1-right{
-  width: 30%;
-
+  width: 40%;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+.proj-content-1-right img{
+  width: 80%;
+  min-width: 300px;
+  max-width: 400px;
+  margin-top: 3vh;
+  margin-left: 5vh;
+}
+
+.proj-content-2{
+  margin-top: -50px;
 }
 
 .proj-content-2 h2 {
@@ -405,6 +488,7 @@ button:hover {
 
 .about-content {
   width: 85%;
+  max-width: 1100px;
   margin: 5vw;
   padding-bottom: 100px;
 
@@ -412,7 +496,6 @@ button:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .bio {
@@ -420,9 +503,20 @@ button:hover {
 }
 
 .about-content-left {
-  width: 50%;
+  width: 55%;
+  align-items: center;
+  justify-content: center;
+}
+.about-content-left img {
+  width: 40%;
+  margin-left: 45%;
+  margin-top: -8%;
 }
 
 .about-content-right {
   width: 45%
+}
+
+.about-content-right img {
+  width: 100%;
 }
