@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Elena Nguyen's Personal Website</title>
+  <link rel="icon" type="image/png" href="personal-website/public/logo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class='nav-container'> 
+    <div class='nav-content'> 
+        <nav class='nav-left'> 
+            <div class="text-hover">
+                <h4><a href="illustration.html" class="nav-link">Illustrations</a></h4>
+            </div>
+            <div class="text-hover">
+                <h4><a href="projects.html" class="nav-link">Projects</a></h4>
+            </div>
+        </nav>
+        
+        <div class="text-hover">
+            <a href="index.html"><img class="logo" src="personal-website/public/logo.png" alt="Logo Placeholder"></a>
+        </div>
+
+        <nav class='nav-right'> 
+            <div class="text-hover">
+                <h4><a href="about.html" class="nav-link">About</a></h4>
+            </div>
+            <div class="text-hover">
+                <h4><a href="https://linkedin.com" target="_blank">LinkedIn</a></h4>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".nav-link");
+
+        function setActiveLink() {
+            const currentPage = window.location.pathname.split("/").pop(); // Get the current page file name
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active-link");
+                } else {
+                    link.classList.remove("active-link");
+                }
+            });
+        }
+
+        setActiveLink();
+    });
+</script>
+
+<!-- Project Content -->
+<div class="proj-slide-1">
+    <div class="proj-content-1">
+        <div class="proj-content-1-left">
+            <h1>Project Portfolio</h1>
+            <h4>Elena Nguyen | <a href="https://www.sfu.ca/fas/computing.html" target="_blank" style="border-bottom: 1px solid #183252">SFU CS</a></h4>
+            <p>
+                This portfolio showcases a selection of my projects, highlighting my work in design and development.
+                Feel free to browse through to see my skills and experience in practice.
+            </p>
+        </div>
+        <div class="proj-content-1-right">
+            <img id="flipPhone" src="" alt="Project Image">
+        </div>
+    </div>
+
+    <div class="proj-content-2">
+        <div class="proj-content-2-langs">
+            <h2>Languages</h2>
+            <p>Python, C, C++, Java</p>
+            <p>HTML, CSS, JS</p>
+        </div>
+        <hr class="project-divider">
+        <div class="proj-content-2-projects">
+            <h2>Project Links</h2>
+            <div class="proj-links" id="projectLinks"></div>
+        </div>
+    </div>  
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const flipPhone = document.getElementById("flipPhone");
+        flipPhone.src = "/personal-website/src/assets/flip_phone.png"; // Replace with actual image path
+
+        const projects = [
+            {
+                img: "/personal-website/src/assets/miso_hungry.png", // Replace with actual image path
+                title: "Miso Hungry",
+                description: "Miso Hungry is designed to help users generate meal ideas based on the ingredients they have at home.",
+                link: "https://github.com/elenaktnguyen/Sample1",
+                langs: ["HTML", "CSS", "JS"]
+            },
+            {
+                img: "/personal-website/src/assets/sample_project.png", // Replace with actual image path
+                title: "Sample Project 2",
+                description: "This is a template project for the sake of this mini project. There is nothing else to explore here.",
+                link: "https://github.com/elenaktnguyen/Sample2",
+                langs: []
+            }
+        ];
+
+        const projectLinks = document.getElementById("projectLinks");
+
+        projects.forEach(project => {
+            const projectCard = document.createElement("div");
+            projectCard.classList.add("project-card-container");
+            projectCard.innerHTML = `
+                <div class="project-card-content">
+                    <a href="${project.link}" target="_blank">
+                        <img src="${project.img}" alt="${project.title} image" class="project-card-img"/>
+                    </a>
+                </div>
+                <h2 class="project-card-title">
+                    <a href="${project.link}" target="_blank">${project.title}</a>
+                </h2>
+                <p class="project-card-description" style="font-size: large; margin-top: -10px;">${project.description}</p>
+                <div class="project-card-langs">
+                    ${project.langs.length > 0 ? project.langs.map(lang => `<p class="project-card-lang">${lang}</p>`).join('') : '<p class="project-card-lang">N/A</p>'}
+                </div>
+            `;
+            projectLinks.appendChild(projectCard);
+        });
+    });
+</script>
+
+
+<!-- Footer -->
+<footer>
+  <div class="socials">
+      <a href="https://instagram.com" target = "blank">
+          <p>
+              <img class="s-icon" src="personal-website/src/assets/instagram_icon.png" alt="Instagram icon"></img>
+          </p>
+      </a>
+      <a href="https://linkedin.com" target = "blank">
+          <p>
+              <img class="s-icon" src="personal-website/src/assets/linkedin_icon.png" alt="LinkedIn icon"></img>
+          </p>
+      </a>
+      <a href="https://github.com" target = "blank">
+          <p>
+              <img class="s-icon" src="personal-website/src/assets/github_icon.png" alt="GitHub icon"></img>
+          </p>
+      </a>
+  </div>
+  <p class="copyright">&copy; 2005  Elena Nguyen</p>
+</footer>
+
+
+
+
+
+</body>
+</html>
