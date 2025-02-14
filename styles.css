@@ -515,10 +515,11 @@
   }
   
   .about-content-right {
-    width: 45%
+    width: 25%;
+
   }
   
   .about-content-right img {
-    width: 100%;
+    width: 35vw;
   }
   
