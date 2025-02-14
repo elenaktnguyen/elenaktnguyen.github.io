@@ -278,6 +278,10 @@
     flex-direction: column;
     justify-content: center; /* verticle */
   }
+
+  .illustration-image h1 {
+    margin-top: -3%;
+  }
   
   .illustration-image button {
     width: 15%;
